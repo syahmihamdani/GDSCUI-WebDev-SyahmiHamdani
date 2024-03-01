@@ -1,0 +1,167 @@
+body{
+    background-color: #35374B;
+    margin: 0px;
+    padding: 0px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 72px;
+    background: linear-gradient(135deg ,#78A083, #50727B);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 20%;
+    margin-top: 15px;
+    margin-right: 15px;
+    top: -5px;
+    right: -5px
+
+  }
+
+.top-bar{
+    background-color: #50727B;
+}
+
+.navbar ul{
+    background-color: #78A083;
+    border-radius: 20px;    
+    box-shadow: 0 2px 4px 0 #50727B;
+    list-style-type: none;
+    overflow: hidden;
+    width: 100%;
+ 
+}
+
+.navbar a{
+    color: white;
+    padding: 15px;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: rem;
+}
+
+.navbar a:hover{
+    background-color: #50727B;
+}
+
+.navbar li{
+    float: left;
+    text-decoration: none;
+}
+
+.navbar{
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+h2{
+    color: white;
+    margin-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #50727B;
+    border-radius: 20px;
+    padding: auto auto;
+    text-align: center;
+    width: 8rem;
+    box-shadow: 0 2px 4px 0 #78A083;
+
+}
+
+.tasks-section{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -20px;
+}
+
+.todo-list{
+    background-color: white;
+    width: 200px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.completed-list{
+    background-color: white;
+    width: 200px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+button{
+    border-radius: 20px;
+    background-color: #78A083;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 800;
+
+}
+
+.box{
+    margin: auto auto;
+    background-color: white;
+    overflow-y: scroll;
+    height: 120px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 #78A083;
+
+}
+
+fieldset{
+    border: 2px solid #78A083;
+    margin-left: 40px;
+}
+
+label{
+    color: white;
+}
+
+#high-prio{
+    background-color: red;
+}
+
+#mid-prio{
+    background-color: yellow;
+}
+
+#low-prio{
+    background-color: green;
+}
+
+#no-prio{
+    background-color: gray;
+}
+
+li{
+    color: black;
+    list-style-type: none;
+}
+
+input{
+    border-radius: 20px;
+}
+
+button:hover{
+    background-color: #50727B;
+}
+
+.largesquare{
+    height: 500px;
+    background-color: white;
+}
+
+.box1{
+    margin: auto 0;
+    margin-left: 30px;
+    background-color: white;
+    height: 120px;
+    width: 1000px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0 #78A083;
+}

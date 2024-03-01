@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>todolist</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="top">        
+     <nav class="navbar">    
+        <ul>
+            <li>
+                <a href="#sort-tasks">SORT</a>
+            </li>
+            <li>
+                <a href="#filter-tasks">FILTER</a>
+            </li>
+            <li>
+                <a href="README.md">HELP</a>
+            </li>
+        </ul>
+    </nav>
+        <h1><a href="index.html">todolist</a></h1>
+    </div>
+    <section role="region" aria-labelledby="tasks-section">
+        <div class="tasks-section" id="tasks-section">
+            <div>
+                <h2>Add Tasks</h2>
+                   <div>
+                        <fieldset>
+                        <label> Task * : <input id="task-name" type= "text" placeholder="Go to school" required></label><br>
+                        <label> Due Date: <input id="due-date" type= "date"></label><br>
+                        <label> Category * : </label><br>
+                        <select id="categories" onchange="showCat(this)" required>
+                            <option value="1">
+                                Add new category
+                            </option>
+                            <option id = "school" selected>
+                                School
+                            </option>
+                            <option id = "work">
+                                Work
+                            </option>
+                            <option id = "personal">
+                                Personal
+                            </option>
+                        </select><br>
+                        <label id="add-category" style="display:none;"> Add Category <input type="text" id="newCategory"><button onclick="addCategory()">ADD</button> </label>
+                        <label>Priority: </label><br>
+                        <select id="priority">
+                            <option value="high-prio" id="high-prio">High</option>
+                            <option value="mid-prio" id="mid-prio">Medium</option>
+                            <option value="low-prio" id="low-prio">Low</option>
+                            <option value="no-prio" id="no-prio">No Priority</option>
+                        </select><br>
+                        </fieldset>
+                        <button id="add-button" onclick="addToDo()">ADD</button>
+                    </div>
+            </div>
+            <div>
+            <h2>To-do</h2>
+            <div class="box">
+                <ul id="todo-list"></ul>
+            </div>
+            </div>
+            <div>
+                <h2>Completed</h2>
+            <div class="box">
+                <ul id="completed-list"></ul>
+            </div>
+            <button onclick="deleteCompleted()">DELETE</button>
+            </div>
+        </div>
+        </section><br><br><br>
+
+    <section role="region" aria-labelledby="filter-tasks">
+        <div class="filter-tasks" id="filter-tasks">
+            <h2>FILTER</h2>
+            <div class="box1">
+            </div>
+        </section>
+
+    <section role="region" aria-labelledby="sort-tasks">
+        <div class="sort-tasks" id="sort-tasks">
+            <h2>SORT</h2>
+            <div class="box1">
+            </div>
+        </section>
+
+        </div>
+
+    
+    
+
+
+
+</body>
+</html>
