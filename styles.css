@@ -71,6 +71,7 @@ h2{
     text-align: center;
     width: 8rem;
     box-shadow: 0 2px 4px 0 #78A083;
+    font-size: 1.3rem;
 
 }
 
@@ -78,6 +79,11 @@ h2{
     display: flex;
     justify-content: space-evenly;
     margin-left: -20px;
+}
+
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
 }
 
 .todo-list{
@@ -105,7 +111,7 @@ button{
 
 .box{
     margin: auto auto;
-    background-color: white;
+    background-color:#50727B;
     overflow-y: scroll;
     height: 120px;
     border-radius: 20px;
@@ -116,6 +122,7 @@ button{
 fieldset{
     border: 2px solid #78A083;
     margin-left: 40px;
+    width: 300px;
 }
 
 label{
@@ -139,8 +146,10 @@ label{
 }
 
 li{
-    color: black;
+    color: white;
     list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
 
 input{
@@ -158,20 +167,23 @@ button:hover{
 
 .box1{
     margin: auto 0;
-    margin-left: 30px;
-    background-color: white;
+    margin-left: 100px;
+    background-color: #50727B;
     height: 120px;
     width: 1000px;
     border-radius: 20px;
     box-shadow: 0 2px 4px 0 #78A083;
 }
 
-label{
-    font-family: Arial;
-}
-
 input[type="checkbox"]{
     accent-color: green;
 }
 
+#add-button{
+    margin-top: 10px;
+    margin-left: 100px;
+}
 
+#delete-button{
+    margin-top: 10px;
+}
