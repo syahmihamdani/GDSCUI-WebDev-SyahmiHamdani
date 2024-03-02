@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>todolist</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>todolist</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="logo.png" />
+    </head>
 
-</head>
-
-<body>
-    <div class="top">        
-     <nav class="navbar">    
+    <body>
+        <div class="top">        
+            <nav class="navbar">    
         <ul>
             <li>
                 <a href="#sort-tasks">SORT</a>
@@ -27,6 +26,7 @@
     </nav>
         <h1><a href="index.html">todolist</a></h1>
     </div>
+    
     <section role="region" aria-labelledby="tasks-section">
         <div class="tasks-section" id="tasks-section">
             <div>
@@ -35,31 +35,31 @@
                         <fieldset>
                         <label> Task * : <input id="task-name" type= "text" placeholder="Go to school" required></label><br>
                         <label> Due Date: <input id="due-date" type= "date"></label><br>
-                        <label> Category * : </label><br>
+                        <label> Category * : </label>
                         <select id="categories" onchange="showCat(this)" required>
                             <option value="1">
                                 Add new category
                             </option>
-                            <option id = "school" selected>
+                            <option id = "school" value="school" selected>
                                 School
                             </option>
-                            <option id = "work">
+                            <option id = "work" value="work">
                                 Work
                             </option>
-                            <option id = "personal">
+                            <option id = "personal" value="personal">
                                 Personal
                             </option>
                         </select><br>
                         <label id="add-category" style="display:none;"> Add Category <input type="text" id="newCategory"><button onclick="addCategory()">ADD</button> </label>
-                        <label>Priority: </label><br>
+                        <label>Priority: </label>
                         <select id="priority">
                             <option value="high-prio" id="high-prio">High</option>
                             <option value="mid-prio" id="mid-prio">Medium</option>
                             <option value="low-prio" id="low-prio">Low</option>
                             <option value="no-prio" id="no-prio">No Priority</option>
-                        </select><br>
+                        </select><br>                        
+                        <button id="add-button" onclick="addToDo(); addValues();" ond>ADD</button>
                         </fieldset>
-                        <button id="add-button" onclick="addToDo()">ADD</button>
                     </div>
             </div>
             <div>
@@ -73,31 +73,28 @@
             <div class="box">
                 <ul id="completed-list"></ul>
             </div>
-            <button onclick="deleteCompleted()">DELETE</button>
+            <button id="delete-button" onclick="deleteCompleted()">DELETE</button>
             </div>
         </div>
         </section><br><br><br>
 
     <section role="region" aria-labelledby="filter-tasks">
         <div class="filter-tasks" id="filter-tasks">
-            <h2>FILTER</h2>
+            <h2>Filter  </h2>
             <div class="box1">
+                <ul id="filterList"></ul>
             </div>
-        </section>
+        </section><br><br>
 
     <section role="region" aria-labelledby="sort-tasks">
         <div class="sort-tasks" id="sort-tasks">
-            <h2>SORT</h2>
+            <h2>Sort</h2>
             <div class="box1">
+                <ul id="sortList"></ul>
             </div>
         </section>
 
-        </div>
+    </div>
 
-    
-    
-
-
-
-</body>
+    </body>
 </html>
