@@ -169,7 +169,7 @@ button:hover{
     margin: auto 0;
     margin-left: 100px;
     background-color: #50727B;
-    height: 120px;
+    height: 200px;
     width: 1000px;
     border-radius: 20px;
     box-shadow: 0 2px 4px 0 #78A083;
@@ -186,4 +186,12 @@ input[type="checkbox"]{
 
 #delete-button{
     margin-top: 10px;
+}
+
+#sort-by{
+    margin-left: 100px;
+}
+
+#filter-by{
+    margin-left: 100px;
 }
